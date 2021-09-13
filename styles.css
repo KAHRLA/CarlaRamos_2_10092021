@@ -71,10 +71,11 @@ p
  {
     width: 2%;
     padding: 18px;
+    margin-left: 30px;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    margin-left: 40px; 
+    margin-right:0px;
     
 }
 #bouton-recherche input /*boutom Marseille*/
@@ -119,7 +120,7 @@ p
     font-weight: bold;
     padding:30px ;
     padding-bottom: 20px;
-    margin-left: 18px;
+    margin-left: 10px;
 }
 
 .filtre 
@@ -188,6 +189,7 @@ a
     padding-right: 10px;
     color:#0065FC;
     align-items: center;
+    margin-left: 30px;
     
 }
 
@@ -197,11 +199,12 @@ display: flex;
 align-items: center ;
 }
 
-#pop-icone  /*_____________________________________CONTENEUR 2________________________________________*/
+#pop-icone  /*________________________________Aside________________________________________*/
 {
     display :flex; 
     justify-content: space-between ;
     align-items: top;
+
 
 }
 .titre 
@@ -209,12 +212,12 @@ align-items: center ;
     font-family : 'Raleway', sans-serif;
     font: size 16px;
     font-weight: bold;
-    padding: 10px;
+    padding:5px
 }
 .description
 {
     font-family : 'Raleway', sans-serif;
-    font-size:12px;
+
 }
 #lespluspopulaire1 .etoiles
 {
@@ -222,7 +225,7 @@ padding:20px;
 }
 .etoiles
 {
-   padding: 5px; 
+   padding: 4px; 
 }
 .blue
 {
@@ -232,23 +235,23 @@ padding:20px;
 {
    color: #F2F2F2; 
 } 
- section, aside
+section, aside
 {
     display: flex;
     position: relative;
     right:0px;
-    
+
 }
 #lespluspopulaire 
 {   
+
     
     border-radius:20px;
     background-color:#F2F2F2;
     width:320px;
     height:600px;
-    margin-top: 20px;
     margin: 20px;
-    padding:10px;
+    padding:20px;
 }
 
 
@@ -256,27 +259,25 @@ padding:20px;
 {
   display: flex;
   flex-direction: column;
-
-
-
+  
+ 
 }
-#lespluspopulaire1 
+#lespluspopulaire1  a
 {
-    width : 90%;
-    height: 60px;
-
+    padding: 15px;
 }
 
 .hotelsoleil 
 {
     width: 100%;
-    height: 90%;
+    height: 90%;  
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:5px; 
+
+    
 }
 
 img#hotelsoleil2
@@ -285,8 +286,7 @@ width:130px;
 height:120px;
 border-radius: 10px 0px 0px 10px;
 float: left;
-padding-right: 5px;
-
+padding-right: 8px;
 }
 
 .chambredhote 
@@ -298,7 +298,7 @@ padding-right: 5px;
     box-shadow:0 0 20px #b1b1b1;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:5px; 
+    padding-bottom:1px; 
 }
 
 img#chambredhote2 
@@ -307,7 +307,7 @@ width:130px;
 height:120px;
 border-radius:10px 0px 0px 10px;
 float: left;
-padding-right: 5px;
+padding-right: 8px;
 
 }
 
@@ -320,7 +320,7 @@ padding-right: 5px;
     box-shadow:0 0 20px #b1b1b1; 
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:5px; 
+    padding-bottom:1px; 
 }
 
 img#hotelblue2
@@ -329,20 +329,19 @@ width:130px;
 height:120px;
 border-radius:10px 0px 0px 10px;
 float: left;
-padding-right: 5px;
+padding-right: 8px;
 }
 
-/*______________________________CONTENEUR 1___________________________________________________________*/
+/*______________________________Article___________________________________________________________*/
 #conteneur-hebergements
 {
-
 border-radius:20px;
 background-color:#F2F2F2;
 width:800px;
 height:600px;
-margin-top: 20PX;
-margin:20px;
-padding:10px;
+margin-top: 20px;
+margin:35px;
+padding: 10px;
  }
 
  #content-hebergements1
@@ -354,7 +353,7 @@ padding:10px;
  }
 #content-hebergements1 a
 {
-    width : 30%;
+    width : 28%;
     padding : 10px;
 }
 
@@ -367,13 +366,12 @@ padding:10px;
     padding-right:5px;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:15px; 
+    padding-bottom:10px; 
 
 }
 img#cannebiere2
 {
-width:180px;
-height:130px;
+height: 142px;
 border-radius:10px 10px 0px 0px;
  }
    
@@ -386,14 +384,13 @@ border-radius:10px 10px 0px 0px;
     padding-right : 5px;
     padding-left : 5px;
     padding-top : 5px; 
-    padding-bottom : 15px;
+    padding-bottom : 10px;
  
 }
     
 img#hotelduport2
 {
-width:180px;
-height:130px;
+height: 142px;
 border-radius:10px 10px 0px 0px;
 }
 
@@ -406,13 +403,12 @@ border-radius:10px 10px 0px 0px;
     padding-right:5px;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:15px; 
+    padding-bottom:10px; 
 
 }
 img#lesmouettes2
 {
-width:180px;
-height:130px;
+height:142px;
 border-radius:10px 10px 0px 0px;
 }   
 .hotellamer   
@@ -424,14 +420,13 @@ border-radius:10px 10px 0px 0px;
     padding-right:5px;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:15px; 
+    padding-bottom:10px; 
 
 }
 
 img#hotellamer2
 {
-width:180px;
-height:130px;
+height:120px;
 border-radius:10px 10px 0px 0px;    
 }
 .lepanier
@@ -443,13 +438,13 @@ border-radius:10px 10px 0px 0px;
     padding-right:5px;
     padding-left:5px;
     padding-top:5px; 
-    padding: bottom 15px; 
+    padding-bottom: 10px; 
 
 }
 img#lepanier2
  {
-width:180px;
-height:130px;
+
+height: 120px;
 border-radius:10px 10px 0px 0px;
  }   
 .chezamina
@@ -460,139 +455,145 @@ border-radius:10px 10px 0px 0px;
     padding-right:5px;
     padding-left:5px;
     padding-top:5px; 
-    padding-bottom:15px; 
+    padding-bottom:10px; 
 
 }
 img#chezamina2
 {
-width:180px;
-height:130PX;
+height: 122px;
 border-radius:10px 10px 0px 0px;    
 } 
 
 .plusdinfo
 {
-bottom: 1px; 
 font-weight: bold;
 }
-/*____________________________________CONTENEUR 3_________________________________________________________*/
-#conteneur-activites1
-{
-display: flex; 
-justify-content: space-around;
-align-items: flex-end;
-}
+/*____________________________________Section_________________________________________________________*/
+
 #conteneur-activites
 {
+    
     border-radius:20px;
-    width:800px;
-    height:400px;
-    margin:20px;
-    padding:30px;
+    width:950%;
+    height:600px;
 
 }
-.vieuxport
+
+#conteneur-activites1
+{   display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+#conteneur-activites1 a
 {
-    width:100%;
-    height: 100%;
+height: 50%;
+margin: 15px;
+
+}
+
+.activite1
+{ display: flex;
+ align-items:stretch;
+
+}
+ .vieuxport
+{
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    padding:15px;
-    margin-bottom:20px;
-
+     margin-bottom:10px; 
+    
  } 
  img#vieuxport2
  {
-width:135px;
-height:130px;
-border-radius:10px 10px 0px 0px;
+    width: 250px;
+    border-radius:10px 10px 0px 0px; 
 } 
+ .activite2
+ {
+     display: flex;
+     flex-direction: column;
+
+ }
 .pomegues
 {
-    width: 100%;
-    height:100%;
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    padding:15px;
-    margin-bottom:20px; 
-  
+    margin-bottom:10px; 
 }
 img#pomegues2
 {
-width:135px;
-height:130px;
+height:190px;
 border-radius:10px 10px 0px 0px; 
 }
 
 .friouil
 {
-    width:100%;
-    height:100%;
+
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    padding:15px;
-    margin-bottom:20px;
-   
+    margin-bottom:10px;
 }
 img#friouil2
 {
-width:135px;
-height:130px;
+height:150px;
 border-radius:10px 10px 0px 0px;
-
+}
+.activite3
+{
+    display: flex;
+    align-self: stretch;
 }
 .calanques
 {
-    width:100%;
-    height:100%;
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    padding:15px;
-    margin-bottom: 20px;
-
+    margin-bottom: 10px;
+    align-self: stretch;
 }
 img#calanques2
 {
-width:135px;
-height:130px;
+height: 160px;
 border-radius:10px 10px 0px 0px;
+
 }
+.activite4
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
 .notredame
 {
-    width:100%;
-    height:100%;
+    
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    position:15px;
-    margin-bottom:20px;
+    margin-bottom:10px;
+    align-self: flex-start;
 }
 img#notredame2
 {
-width:135px;
-height:130px;
+
+height:145px;
 border-radius:10px 10px 0px 0px;
 }
 
 .longchamp
 {
-    width:100%;
-    height:100%;
     border-radius:15px;
     background-color:white;
     box-shadow : 0 0 20px #b1b1b1;
-    padding:15px;
-    margin-bottom:20px;
-
+    margin-bottom:10px;
 }
 img#longchamp2
 {
-width:135px;
-height:130px;
+    height: 167px;
 border-radius:10px 10px 0px 0px;
 
 }

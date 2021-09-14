@@ -106,8 +106,8 @@ p
 #recherche:hover
 {
     background-color:white;
-    color:black;
-    border:#0065FC;
+    color:#0065FC;
+    border: solid #0065FC;
 }
 #filtres p
 {
@@ -138,7 +138,7 @@ p
 .filtre:hover
 {
 background-color:#0065FC;
-color: white;
+color: #ffffff;
 }
 #filtres .filtre .cercle  
 {
@@ -249,7 +249,7 @@ section, aside
     border-radius:20px;
     background-color:#F2F2F2;
     width:320px;
-    height:600px;
+    height:650px;
     margin: 20px;
     padding:20px;
 }
@@ -264,7 +264,7 @@ section, aside
 }
 #lespluspopulaire1  a
 {
-    padding: 15px;
+    padding:18px;
 }
 
 .hotelsoleil 
@@ -338,7 +338,7 @@ padding-right: 8px;
 border-radius:20px;
 background-color:#F2F2F2;
 width:800px;
-height:600px;
+height:650px;
 margin-top: 20px;
 margin:20px;
 padding: 20px;
@@ -354,7 +354,7 @@ padding: 20px;
 #content-hebergements1 a
 {
     width : 28%;
-    padding : 10px;
+    padding : 15px;
 }
 
 .cannebiere
@@ -413,20 +413,19 @@ border-radius:10px 10px 0px 0px;
 }   
 .hotellamer   
 {
-   
+    
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
     padding-right:5px;
     padding-left:5px;
-    padding-top:5px; 
-    padding-bottom:10px; 
-
+    padding-top:5px;
+    margin-bottom: 10px; 
 }
 
 img#hotellamer2
 {
-height:120px;
+height: 145px;
 border-radius:10px 10px 0px 0px;    
 }
 .lepanier
@@ -444,7 +443,7 @@ border-radius:10px 10px 0px 0px;
 img#lepanier2
  {
 
-height: 120px;
+height: 140px;
 border-radius:10px 10px 0px 0px;
  }   
 .chezamina
@@ -460,7 +459,7 @@ border-radius:10px 10px 0px 0px;
 }
 img#chezamina2
 {
-height: 122px;
+height: 140px;
 border-radius:10px 10px 0px 0px;    
 } 
 
@@ -472,7 +471,7 @@ font-weight: bold;
 
 #conteneur-activites
 {
-    
+    padding-left: 20px;
     border-radius:20px;
     width:950%;
     height:600px;
@@ -481,21 +480,14 @@ font-weight: bold;
 
 #conteneur-activites1
 {   display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items:flex-start;
-}
-
-#conteneur-activites1 a
-{
-height: 50%;
-margin: 15px;
-
 }
 
 .activite1
 { display: flex;
  align-items:stretch;
-
+ margin:15px;
 }
  .vieuxport
 {
@@ -507,14 +499,16 @@ margin: 15px;
  } 
  img#vieuxport2
  {
-    width: 250px;
+    height:130%;
     border-radius:10px 10px 0px 0px; 
+    
 } 
  .activite2
  {
      display: flex;
      flex-direction: column;
-
+     margin: 15px;
+    
  }
 .pomegues
 {
@@ -525,8 +519,9 @@ margin: 15px;
 }
 img#pomegues2
 {
-height:190px;
+height:172px;
 border-radius:10px 10px 0px 0px; 
+
 }
 
 .friouil
@@ -539,13 +534,16 @@ border-radius:10px 10px 0px 0px;
 }
 img#friouil2
 {
-height:150px;
+height:90px;
 border-radius:10px 10px 0px 0px;
 }
 .activite3
 {
     display: flex;
-    align-self: stretch;
+    align-items: stretch;
+    margin: 15px;
+
+    
 }
 .calanques
 {
@@ -553,19 +551,20 @@ border-radius:10px 10px 0px 0px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
     margin-bottom: 10px;
-    align-self: stretch;
+
 }
 img#calanques2
 {
-height: 160px;
+height:92%;
 border-radius:10px 10px 0px 0px;
+
 
 }
 .activite4
 {
     display: flex;
     flex-direction: column;
-
+    margin: 15px;
 }
 
 .notredame
@@ -590,11 +589,12 @@ border-radius:10px 10px 0px 0px;
     background-color:white;
     box-shadow : 0 0 20px #b1b1b1;
     margin-bottom:10px;
+    
 }
 img#longchamp2
 {
     height: 167px;
-border-radius:10px 10px 0px 0px;
+    border-radius:10px 10px 0px 0px;
 
 }
 footer /*________________________________________________________PIED DE SITE______________________________________________*/
@@ -602,6 +602,7 @@ footer /*________________________________________________________PIED DE SITE___
     display:inline-flex;
     background-color:#F2F2F2;
     justify-content:space-between;
+    padding-left: 20px;
 }
 
 #propos

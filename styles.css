@@ -48,6 +48,7 @@ font-weight: bold;
 h3, h2
 {
    font-family : 'Raleway', sans-serif; 
+   font-size: 18px;
    
 }
 
@@ -69,8 +70,8 @@ p
 
 #map i  /* icon map*/
  {
-    width: 2%;
-    padding: 18px;
+    width: 1%;
+    padding: 16px;
     margin-left: 30px;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
@@ -83,7 +84,7 @@ p
   font-family : 'Raleway', sans-serif;
   text-align: center;
   font-weight:bold;
-  font-size: 16px;
+  font-size: 14px;
   border: solid 2px #F2F2F2;
   padding: 14px  5px;
 } 
@@ -98,8 +99,7 @@ p
     border-radius:0px 10px 10px 0px;
     border: none; 
     font-family : 'Raleway', sans-serif; 
-    font-weight: bold;
-    font-size: 16px; 
+    font-size: 14px; 
  
 }
 
@@ -169,6 +169,7 @@ color: #ffffff;
     text-decoration:none;
     font-family : 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 14px;
     margin: 50px;
     width: 50px;
 }
@@ -210,7 +211,6 @@ align-items: center ;
 .titre 
 {
     font-family : 'Raleway', sans-serif;
-    font: size 16px;
     font-weight: bold;
     padding:5px
 }
@@ -225,7 +225,7 @@ padding:20px;
 }
 .etoiles
 {
-   padding: 4px; 
+   padding: 5px; 
 }
 .blue
 {
@@ -235,6 +235,14 @@ padding:20px;
 {
    color: #F2F2F2; 
 } 
+
+.prix
+{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
 section, aside
 {
     display: flex;
@@ -249,7 +257,7 @@ section, aside
     border-radius:20px;
     background-color:#F2F2F2;
     width:320px;
-    height:650px;
+    height:600px;
     margin: 20px;
     padding:20px;
 }
@@ -269,20 +277,21 @@ section, aside
 
 .hotelsoleil 
 {
-    width: 100%;
-    height: 90%;  
+
+     
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
     padding-left:5px;
-    padding-top:5px; 
+    padding-top:5px;
+    padding-bottom:1px; 
 
     
 }
 
 img#hotelsoleil2
 {
-width:130px;
+width:100px;
 height:120px;
 border-radius: 10px 0px 0px 10px;
 float: left;
@@ -291,8 +300,8 @@ padding-right: 8px;
 
 .chambredhote 
 {
-    width: 100%;
-    height: 90%;
+    
+
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
@@ -303,7 +312,7 @@ padding-right: 8px;
 
 img#chambredhote2 
 {
-width:130px;
+width:120px;
 height:120px;
 border-radius:10px 0px 0px 10px;
 float: left;
@@ -313,8 +322,8 @@ padding-right: 8px;
 
 .hotelblue 
 {
-    width: 100%;
-    height: 90%;
+    
+
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1; 
@@ -325,7 +334,7 @@ padding-right: 8px;
 
 img#hotelblue2
 {
-width:130px;
+width:120px;
 height:120px;
 border-radius:10px 0px 0px 10px;
 float: left;
@@ -338,7 +347,7 @@ padding-right: 8px;
 border-radius:20px;
 background-color:#F2F2F2;
 width:800px;
-height:650px;
+height:600px;
 margin-top: 20px;
 margin:20px;
 padding: 20px;
@@ -369,9 +378,11 @@ padding: 20px;
     padding-bottom:10px; 
 
 }
+
 img#cannebiere2
 {
 height: 142px;
+height:100px; 
 border-radius:10px 10px 0px 0px;
  }
    
@@ -391,6 +402,7 @@ border-radius:10px 10px 0px 0px;
 img#hotelduport2
 {
 height: 142px;
+height:100px;
 border-radius:10px 10px 0px 0px;
 }
 
@@ -409,6 +421,7 @@ border-radius:10px 10px 0px 0px;
 img#lesmouettes2
 {
 height:142px;
+height: 100px;
 border-radius:10px 10px 0px 0px;
 }   
 .hotellamer   
@@ -425,7 +438,8 @@ border-radius:10px 10px 0px 0px;
 
 img#hotellamer2
 {
-height: 145px;
+height: 140px;
+height: 110px;
 border-radius:10px 10px 0px 0px;    
 }
 .lepanier
@@ -444,6 +458,7 @@ img#lepanier2
  {
 
 height: 140px;
+height:100px ;
 border-radius:10px 10px 0px 0px;
  }   
 .chezamina
@@ -459,7 +474,8 @@ border-radius:10px 10px 0px 0px;
 }
 img#chezamina2
 {
-height: 140px;
+height: 105px;
+height:100 px;
 border-radius:10px 10px 0px 0px;    
 } 
 

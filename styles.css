@@ -515,7 +515,8 @@ font-weight: bold;
  } 
  img#vieuxport2
  {
-    height:130%;
+    width:245px ;
+    height:410px;
     border-radius:10px 10px 0px 0px; 
     
 } 
@@ -535,14 +536,14 @@ font-weight: bold;
 }
 img#pomegues2
 {
-height:172px;
+width: 250px; 
+height:170px;
 border-radius:10px 10px 0px 0px; 
 
 }
 
 .friouil
 {
-
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
@@ -550,7 +551,8 @@ border-radius:10px 10px 0px 0px;
 }
 img#friouil2
 {
-height:90px;
+width:250px ;
+height:100px;
 border-radius:10px 10px 0px 0px;
 }
 .activite3
@@ -571,7 +573,8 @@ border-radius:10px 10px 0px 0px;
 }
 img#calanques2
 {
-height:92%;
+width:245px;
+height:190%;
 border-radius:10px 10px 0px 0px;
 
 
@@ -594,8 +597,8 @@ border-radius:10px 10px 0px 0px;
 }
 img#notredame2
 {
-
-height:145px;
+width:260px;
+height:140px;
 border-radius:10px 10px 0px 0px;
 }
 
@@ -608,8 +611,8 @@ border-radius:10px 10px 0px 0px;
     
 }
 img#longchamp2
-{
-    height: 167px;
+{   width: 260px;
+    height: 110px;
     border-radius:10px 10px 0px 0px;
 
 }

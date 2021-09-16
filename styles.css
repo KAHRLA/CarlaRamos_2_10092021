@@ -126,7 +126,7 @@ p
 .filtre 
 {
     display:flex;
-    align-items: center;
+    align-items:center ;
     height: 50px;
     border-radius: 30px;
     border:2px solid #F2F2F2;
@@ -165,12 +165,12 @@ color: #ffffff;
 #filtres .filtre a 
 {
     
-    padding : 0 20px 0 25px;
+    padding : 0 25px 0 25px;
     text-decoration:none;
     font-family : 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 14px;
-    margin: 50px;
+    margin: 40px;
     width: 50px;
 }
 
@@ -503,7 +503,7 @@ font-weight: bold;
 .activite1
 { display: flex;
  align-items:stretch;
- margin:15px;
+ margin:10px;
 }
  .vieuxport
 {
@@ -524,7 +524,8 @@ font-weight: bold;
  {
      display: flex;
      flex-direction: column;
-     margin: 15px;
+     justify-content:space-between;
+     margin: 10px;
     
  }
 .pomegues
@@ -533,6 +534,7 @@ font-weight: bold;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
     margin-bottom:10px; 
+
 }
 img#pomegues2
 {
@@ -559,7 +561,7 @@ border-radius:10px 10px 0px 0px;
 {
     display: flex;
     align-items: stretch;
-    margin: 15px;
+    margin: 10px;
 
     
 }
@@ -583,7 +585,8 @@ border-radius:10px 10px 0px 0px;
 {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 10px;
+
 }
 
 .notredame

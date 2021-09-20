@@ -648,7 +648,7 @@ footer /*________________________________________________________PIED DE SITE___
     height:200px;
     margin-right:2px;
 }
-@media all and (min-width:455px) and (max-width: 1024px)
+@media all and (min-width:400px) and (max-width: 1024px)
 /*__________________________________________TETE DU SITE_____________________________________________________________________*/
 {
 header
@@ -663,7 +663,8 @@ margin: 0,5px;
 {  
     width:auto;
     height:auto;
-    position: relative;
+    position: absolute;
+    top: 40px;
     left: 0px;
 }
 

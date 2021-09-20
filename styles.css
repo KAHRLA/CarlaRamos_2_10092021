@@ -247,7 +247,7 @@ section, aside
 {
     display: flex;
     position: relative;
-    right:10px;
+    right:5px;
     padding-top: 0px;
 }
 #lespluspopulaire 
@@ -489,7 +489,7 @@ font-weight: bold;
 {
     padding-left: 20px;
     border-radius:20px;
-    width:950%;
+    width:600%;
     height:600px;
 
 }
@@ -510,7 +510,7 @@ font-weight: bold;
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    margin-bottom:10px; 
+    margin-bottom:0px; 
 
  } 
  img#vieuxport2
@@ -532,7 +532,7 @@ font-weight: bold;
     border-radius:15px;
     background-color:white;
     box-shadow:0 0 20px #b1b1b1;
-    margin-bottom:50px; 
+    margin-bottom:46px; 
 
 }
 img#pomegues2
@@ -624,29 +624,677 @@ footer /*________________________________________________________PIED DE SITE___
     display:inline-flex;
     background-color:#F2F2F2;
     justify-content:space-between;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 #propos
 
 {
-    width:450px;
+    width:420px;
     height:200px;
     margin-right:2px;
 }
  
 #hebergements
 {
-    width:450px ;
+    width:420px ;
     height:200px;
     margin-right:2px;
 }
 
 #assistance
 {
-    width:400px;
+    width:420px;
     height:200px;
     margin-right:2px;
 }
+@media all and (min-width:455px) and (max-width: 1024px)
+/*__________________________________________TETE DU SITE_____________________________________________________________________*/
+{ 
+header
+{
+width:auto;
+height:auto;
+padding:90px;
+margin: 0,5px;
+}
+
+#logo/*logo*/
+{  
+    width:auto;
+    height:auto;
+    position: relative;
+    left: 0px;
+ }
+
+ul/* liens ancre */
+{
+
+    display:flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+
+}    
+
+li
+{
+    display: inline-flexbox;
+    margin: 30px;
 
 
+}
+
+#menu1:visited
+{
+color:#0065FC;
+}
+#menu3:visited
+{
+color:#0065FC;
+font-weight: bold;
+}
+
+/*_______________________________________________CORP DU SITE________________________________________________________________*/
+
+h3, h2
+{
+   font-family : 'Raleway', sans-serif; 
+   font-size: 1,05em;
+   
+}
+
+p
+{
+    font-family : 'Raleway', sans-serif;
+    font-size:1em; 
+}
+
+#introduction
+{
+    width: 60%;
+    height: 5%;
+    margin: 2px;
+    font-family : 'Raleway', sans-serif;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+#map i  /* icon map*/
+ {
+    width: auto;
+    padding: 16px;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #F2F2F2;
+    margin-right:0px;
+    
+}
+#bouton-recherche input /*boutom Marseille*/
+{
+  font-family : 'Raleway', sans-serif;
+  text-align: center;
+  font-weight:bold;
+  font-size: 14px;
+  border: solid 2px #F2F2F2;
+  padding: 14px  5px;
+} 
+
+#recherche /* boutom blue*/
+{
+    text-decoration:none;
+    color: white;
+    width: auto;
+    padding:  15px 25px;
+    background-color:#0065FC;
+    border-radius:0px 10px 10px 0px;
+    border: none; 
+    font-family : 'Raleway', sans-serif; 
+    font-size: 14px; 
+ 
+}
+
+#recherche:hover
+{
+    background-color:white;
+    color:#0065FC;
+    border: solid #0065FC;
+}
+#filtres p
+{
+    padding-right : 25px;
+}
+#filtres
+{
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family : 'Raleway', sans-serif;
+    font-weight: bold;
+    padding:50px ;
+    margin: 35px;
+}
+
+.filtre 
+{
+    display:flex;
+    height: 15px;
+    border-radius: 30px;
+    border:2px solid #F2F2F2;
+    Margin : 0 30px 0 30px;
+    padding : 18px;
+    position :relative;
+    z-index : 2;
+}
+.filtre:hover
+{
+background-color:#0065FC;
+color: #ffffff;
+}
+#filtres .filtre .cercle  
+{
+    width : 55px;
+    height : 55px;
+    border-radius: 25px;
+    background-color:#DEEBFF;
+    position:absolute;
+    z-index:2;
+    margin : 2px 0 0 -2px;
+}
+
+#filtres .filtre .cercle i 
+{    
+
+    padding: 1px;
+    text-align: center;
+    margin-top: 29%;
+    margin-left: 29%;
+    color: #0065FC;
+    
+  
+}
+#filtres .filtre a 
+{
+    
+    padding : 0 25px 0 25px;
+    text-decoration:none;
+    font-family : 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0,1em;
+    margin: 40px;
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
+}  
+#info-icon
+{
+    height: 2%;
+    border-radius:  100px ;
+    border: solid 1px #F2F2F2; 
+    margin:  5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#0065FC;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+
+#infos
+{
+display: flex;
+align-items: left ;
+}
+
+#pop-icone  /*________________________________Aside________________________________________*/
+{
+    display :flex; 
+    justify-content: space-between ;
+    align-items: center;
+
+
+}
+.titre 
+{
+    font-family : 'Raleway', sans-serif;
+    font-weight: bold;
+    padding:5px
+}
+.description
+{
+    font-family : 'Raleway', sans-serif;
+
+}
+#lespluspopulaire1 .etoiles
+{
+padding:20px;
+}
+.etoiles
+{
+   padding: 5px; 
+}
+.blue
+{
+  color: #0065FC;  
+}
+.grey
+{
+   color: #F2F2F2; 
+} 
+
+.prix
+{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+section, aside
+{
+    display: flex;
+flex-wrap: wrap-reverse;
+}
+#lespluspopulaire 
+{   
+
+    
+    border-radius:20px;
+    background-color:#F2F2F2;
+    width:auto;
+    height:auto;
+    margin: 20px;
+    padding:20px;
+}
+
+
+#lespluspopulaire1
+{
+width: auto;
+position: relative;
+left: 0px;
+}
+#lespluspopulaire1  a
+{
+    padding:18px;
+}
+
+.hotelsoleil 
+{
+
+     
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:1px; 
+
+    
+}
+
+img#hotelsoleil2
+{
+width:100px;
+height:120px;
+border-radius: 10px 0px 0px 10px;
+float: left;
+padding-right: 8px;
+}
+
+.chambredhote 
+{
+    
+
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom:1px; 
+}
+
+img#chambredhote2 
+{
+width:120px;
+height:120px;
+border-radius:10px 0px 0px 10px;
+float: left;
+padding-right: 8px;
+
+}
+
+.hotelblue 
+{
+    
+
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1; 
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom:1px; 
+}
+
+img#hotelblue2
+{
+width:120px;
+height:120px;
+border-radius:10px 0px 0px 10px;
+float: left;
+padding-right: 8px;
+}
+
+/*______________________________Article___________________________________________________________*/
+#conteneur-hebergements
+{
+border-radius:20px;
+width:auto;
+height:auto;
+margin-top: 20px;
+margin:20px;
+padding: 20px;
+background-color: white;
+ }
+
+ #content-hebergements1
+ {
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+#content-hebergements1 a
+{
+    width:auto;
+    padding : 15px;
+}
+
+.cannebiere
+{
+    
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom:10px; 
+
+}
+
+img#cannebiere2
+{
+height: 142px;
+height:100px; 
+border-radius:10px 10px 0px 0px;
+ }
+   
+.hotelduport
+{
+    
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0, 0, 20px #b1b1b1;
+    padding-right : 5px;
+    padding-left : 5px;
+    padding-top : 5px; 
+    padding-bottom : 10px;
+ 
+}
+    
+img#hotelduport2
+{
+height: 142px;
+height:100px;
+border-radius:10px 10px 0px 0px;
+}
+
+.lesmouettes
+{
+   
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom:10px; 
+
+}
+img#lesmouettes2
+{
+height:142px;
+height: 100px;
+border-radius:10px 10px 0px 0px;
+}   
+.hotellamer   
+{
+    
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px;
+    margin-bottom: 10px; 
+}
+
+img#hotellamer2
+{
+height: 140px;
+height: 110px;
+border-radius:10px 10px 0px 0px;    
+}
+.lepanier
+{
+   
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom: 10px; 
+
+}
+img#lepanier2
+ {
+
+height: 140px;
+height:100px ;
+border-radius:10px 10px 0px 0px;
+ }   
+.chezamina
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px; 
+    padding-bottom:10px; 
+
+}
+img#chezamina2
+{
+height: 105px;
+height:100 px;
+border-radius:10px 10px 0px 0px;    
+} 
+
+.plusdinfo
+{
+font-weight: bold;
+}
+/*____________________________________Section_________________________________________________________*/
+
+#conteneur-activites
+{
+    padding-left: 20px;
+    border-radius:20px;
+    width:auto;
+    height:auto;
+
+}
+
+#conteneur-activites1
+{   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.activite1
+{ display: flex;
+ align-items:stretch;
+ margin: 10px
+}
+ .vieuxport
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    margin-bottom:0px; 
+
+ } 
+ img#vieuxport2
+ {
+    width:245px ;
+    height:410px;
+    border:245px ;
+
+    
+} 
+ .activite2
+ {
+     display: flex;
+     flex-direction: column ;
+     margin: 10px;
+    
+ }
+.pomegues
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    margin-bottom:46px; 
+
+}
+img#pomegues2
+{
+width: 250px; 
+height:200px;
+border-radius:10px 10px 0px 0px; 
+
+}
+
+.friouil
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    margin-bottom:10px;
+    
+}
+img#friouil2
+{
+width:250px ;
+height:130px;
+border-radius:10px 10px 0px 0px;
+}
+.activite3
+{
+    display: flex;
+    align-items: stretch;
+    margin: 10px;
+
+    
+}
+.calanques
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    margin-bottom: 12px;
+
+}
+img#calanques2
+{
+    width:245px;
+    height:190%;
+    border-radius:10px 10px 0px 0px;
+
+}
+.activite4
+{
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+
+}
+
+.notredame
+{
+    
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 20px #b1b1b1;
+    margin-bottom:70px;
+
+}
+img#notredame2
+{
+width:290px;
+height:160px;
+border-radius:10px 10px 0px 0px;
+}
+
+.longchamp
+{
+    border-radius:15px;
+    background-color:white;
+    box-shadow : 0 0 20px #b1b1b1;
+    margin-bottom:10px;
+    
+    
+}
+img#longchamp2
+{   width: 290px;
+    height: 140px;
+    border-radius:10px 10px 0px 0px;
+
+}
+footer /*________________________________________________________PIED DE SITE______________________________________________*/
+    {
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    justify-content:space-between;
+    padding-left: 10px;
+    }
+
+#propos
+
+    {
+    width:400px;
+    height:200px;
+    margin-right:2px;
+    }
+ 
+#hebergements
+    {
+    width:400px;
+    height:200px;
+    margin-right:2px;
+    }
+
+#assistance
+    {
+    width:400px;
+    height:200px;
+    margin-right:2px;
+    }
+}

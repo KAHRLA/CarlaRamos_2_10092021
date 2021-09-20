@@ -650,7 +650,7 @@ footer /*________________________________________________________PIED DE SITE___
 }
 @media all and (min-width:455px) and (max-width: 1024px)
 /*__________________________________________TETE DU SITE_____________________________________________________________________*/
-{ 
+{
 header
 {
 width:auto;
@@ -665,7 +665,7 @@ margin: 0,5px;
     height:auto;
     position: relative;
     left: 0px;
- }
+}
 
 ul/* liens ancre */
 {
@@ -1297,4 +1297,6 @@ footer /*________________________________________________________PIED DE SITE___
     height:200px;
     margin-right:2px;
     }
+
+
 }

@@ -3,6 +3,8 @@
 
 <head>
   <title>Site de reservations Reservia</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,24 +40,43 @@
   </div>
 
 </section>
-    <div id="filtres">
-      <P>Filtres</P>
-      <div class="filtre"><span class="cercle"><i class="fas fa-money-bill-wave" aria-hidden="true"></i></span><a
-          href="#">Economique</a></div>
-      <div class="filtre"><span class="cercle"><i class="fas fa-child" aria-hidden="true"></i></span><a
-          href="#">Familial</a></div>
-      <div class="filtre"><span class="cercle"><i class="fas fa-heart" aria-hidden="true"></i></span><a
-          href="#">Romantique </a></div>
-      <div class="filtre"><span class="cercle"><i class="fas fa-dog" aria-hidden="true"></i></span><a href="#">Animaux
-          autorises </a></div>
+<div id="filtres">
+  <p>Filtres</p>
+  <div id="categories-filtres">
+    <div class="filtre">
+      <span class="cercle">
+        <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+      </span>
+      <a href="#">Economique</a>
     </div>
-  </nav>
+    <div class="filtre">
+      <span class="cercle">
+        <i class="fas fa-child" aria-hidden="true"></i>
+      </span>
+      <a href="#">Familial</a>
+    </div>
+    <div class="filtre">
+      <span class="cercle">
+        <i class="fas fa-heart" aria-hidden="true"></i>
+      </span>
+      <a href="#">Romantique </a>
+    </div>
+    <div class="filtre">
+      <span class="cercle">
+        <i class="fas fa-dog" aria-hidden="true"></i>
+      </span>
+      <a href="#">Animaux autorises </a>
+    </div>
+  </div>
+</div>
+</nav>
+</div>
   </div>
   <div id="infos">
     <div id="info-icon"><i class="fas fa-info"></i></span></div>
     <p>Plus de 500 logements sont disponibles dans cette ville</p>
   </div>
-  <section>
+  <section id="section-hebergements">
     <article id="conteneur-hebergements">
      <h2>Hebergements a Marseille</h2>
 
@@ -131,16 +152,18 @@
         <p>Afficher plus</p>
       </a>
     </article>
+    
     <aside id="lespluspopulaire">
-      <div id="lespluspopulaire1">
-       <div id="pop-icone">
+
+      <div id="pop-icone">
         <h2>Les plus populaires</h2>
         <i class="fas fa-chart-line"></i>
-       </div>
+      </div>
+      <div id="lespluspopulaire1">
         <a href="#">
           <div class="hotelsoleil">
-          <div class="chambre"><img src="images/hotel_le_soleil.jpg" id="hotelsoleil2" alt=" hotel le soleil"/></div>
-            <div class="titre">Hotel Le soleil du matin</div> 
+            <div class="chambre"><img src="images/hotel_le_soleil.jpg" id="hotelsoleil2" alt=" hotel le soleil" /></div>
+            <div class="titre">Hotel Le soleil du matin</div>
             <div class="description">Nuit a partir de 128€</div>
             <div class="etoiles"><span class="blue"><i class="fas fa-star"></i>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -149,7 +172,8 @@
         </a>
         <a href="#">
           <div class="chambredhote">
-         <div class="chambre"><img src="images/chambre_d'hote_.jpg" id="chambredhote2" alt="au coeur de l'eau chambres d'hotes" /></div> 
+            <div class="chambre"><img src="images/chambre_d'hote_.jpg" id="chambredhote2"
+                alt="au coeur de l'eau chambres d'hotes" /></div>
             <div class="titre">Au coeur de l'eau Chambres d'hotes</div>
             <div class="description">Nuit a partir de 71€</div>
             <div class="etoiles"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -159,7 +183,7 @@
         </a>
         <a href="#">
           <div class="hotelblue">
-         <div class="chambre"><img src="images/tout_blue.jpg" id="hotelblue2" alt="hotel tout bleu et blanc"/></div>
+            <div class="chambre"><img src="images/tout_blue.jpg" id="hotelblue2" alt="hotel tout bleu et blanc" /></div>
             <div class="titre">Hotel Tout blue et Blanc</div>
             <div class="description">Nuit a partir de 68€</div>
             <div class="etoiles"><span class="blue"><i class="fas fa-star">
@@ -170,13 +194,14 @@
       </div>
     </aside>
   </section>
-  <div>
-    <h2>Activites a Marseille</h2>
-  </div>
-  <section id="conteneur-activites">
-      <div id="conteneur-activites1">
+   
+  
+  <section id="section-activites">
+  <h2>Activites a Marseille</h2>
+  <div id="conteneur-activites">
+    <div id="conteneur-activites1">
     
-        <div class="activite1">
+      <div class="activite1">
           <a href="#" class="calanques">
               <div class="crop-loisirs1"><img src="images/bateau_small.jpg" id="vieuxport2" alt="Vieux port"/></div>
               <div class="titre">Vieux Port</div>
@@ -210,10 +235,11 @@
           </a>
         </div>
       </div>
+  </div>
   </section>
 
   <footer>
-    <div id="propos">
+    <div class="propos">
       <h3>A propos</h3>
       <p><a href="#">
           <p>Fonctionnement du site</p>
@@ -225,7 +251,7 @@
             <P>Donnees et confidentialite</P>
           </a>
     </div>
-    <div id="propos">
+    <div class="propos">
       <h3>Nos hebergements</h3>
       <a href="#">
         <P>Charte qualite</P>
@@ -234,7 +260,7 @@
         <P>Soumettre votre hotel</p>
       </a>
     </div>
-    <div id="propos">
+    <div class="propos">
       <h3>Assistance</h3>
       <a href="#">
         <p>Centre d'aide</p>

@@ -36,23 +36,24 @@ li
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 110px; 
-   
+    height: 100px; 
+    
 }
-#menu1{
+.menu1
+{
     border-top:solid 2px #0065FC;
     padding-top: 33px;
     color: #0065FC;
 }
-#menu
+.menu2
 {
     color: black; 
 }
 #menu3{
     color: #0065FC;
     font-weight: bold;
+    padding: 20px;
 }
-*/
 /*_______________________________________________CORP DU SITE________________________________________________________________*/
 
 h3, h2 {
@@ -250,7 +251,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 7.5% 0 7.5%;
+    margin: 30px 7.5% 0 7.5%;
 }
 
 #lespluspopulaire {
@@ -270,7 +271,7 @@ aside {
     padding:10px;
 }
 
-.chambre img {
+.crop-chambre img {
     width: 50%;
     border-radius: 10px 0px 0px 10px;
     float: left;
@@ -312,7 +313,6 @@ aside {
 #section-hebergements {
     display: flex;
 }
-
 #conteneur-hebergements {
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -323,7 +323,6 @@ aside {
 #conteneur-hebergements h2 {
     margin: 45px 5% 0 5%;
 }
-
 #content-hebergements1 {
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +336,11 @@ aside {
     margin-bottom: 25px;
     padding: 5px;
 }
-
+.crop-hotel img
+{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
 .cannebiere {
     border-radius: 15px;
     background-color: white;
@@ -346,11 +349,7 @@ aside {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-img#cannebiere2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden; 
 }
 
 .hotelduport {
@@ -361,11 +360,7 @@ img#cannebiere2 {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-img#hotelduport2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden; 
 }
 
 .lesmouettes {
@@ -376,11 +371,7 @@ img#hotelduport2 {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-img#lesmouettes2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;  
 }
 
 .hotellamer {
@@ -391,11 +382,7 @@ img#lesmouettes2 {
     padding-left: 5px;
     padding-top: 5px;
     margin-bottom: 10px;
-}
-
-img#hotellamer2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden; 
 }
 
 .lepanier {
@@ -406,11 +393,7 @@ img#hotellamer2 {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-img#lepanier2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden; 
 }
 
 .chezamina {
@@ -421,11 +404,7 @@ img#lepanier2 {
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
-}
-
-img#chezamina2 {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    overflow: hidden; 
 }
 
 .plusdinfo {
@@ -503,7 +482,7 @@ img#chezamina2 {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    margin-bottom: 65px;
+    margin-bottom: 75px;
 
 }
 
@@ -515,7 +494,7 @@ img#pomegues2 {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    margin-bottom: 65px;
+    margin-bottom: 75px;
     overflow: hidden;
 
 }
@@ -612,8 +591,6 @@ footer {
         box-shadow: 0 0 20px #b1b1b1;
     }
 
-
-
     #conteneur-activites1 {
         display: flex;
         flex-wrap: wrap;
@@ -641,47 +618,57 @@ footer {
 }
 @media all and (max-width: 576px) 
 {
-
+    header
+    {
+       margin: 0px; 
+       padding: 0px;
+       margin: 10px 0 20px 0;
+    }
     #menu
     {
      width:auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    margin: 15px 0 35px 0;
+    
     }
-    #menu1
+    .menu1
+    {
+        border-top: none;  
+    }
+    .menu01
     {
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        
+        color: #0065FC;
     }
-    #menu2
+    .menu02
     {
-    border-bottom: 2px solid#b1b1b1;
+    border-bottom: 2px solid #b1b1b1;
     }
-    
-    #menu3 
+    #menu
+    {
+        margin: 10px 0 20px 0; 
+    }
     #logo
     {
-        position:top;
-        margin: 15px 0 35px 0;
+    width:auto;
+    padding: 10px 0 0 5%;
     }
     #recherche
     {
     display: none;
     }
-    
     #recherche-mini
     {
-    display: initial;
+    display:initial;
     }
 
     #recherche-mini i
     {
         background-color:#0065FC;
         color: white;
-        border-radius: 10px;
+        border-radius: 15px;
         margin: 0px;
     }
     #recherche-mini i:hover
@@ -692,43 +679,28 @@ footer {
         border-radius: 10px;
     }
     
-    #filtres {
-        margin: 15px 0 35px 0;
-        display: flex;
-        flex-direction: column;
-        margin-left: 35px;
-        align-items: start;
+    .section-hebergements
+    {
+        width: auto;
     }
-
-    #categories-filtres{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .filtre {
-        margin-top: 15px;
-    }
-
-    
-
-    #lespluspopulaires
-    #conteneur-hebergements {
-        width:auto;
+    #conteneur-hebergements
+    {
+        background:none;
+        width:100%;
         margin-top: 20px;
         border-radius: 0px;
-    
     }
     #content-hebergements1
     {
         display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        background-color:none;
-    }
-    #content-hebergements1 a .titre {
-        font-size: 13px;
+        flex-direction:column;
+        justify-content: space-between;
+        width:100%;
         
+    }
+    
+    #content-hebergements1 a .titre {
+        font-size: 10px;
     }
 
     #lespluspopulaire1 {
@@ -737,7 +709,8 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction:row;
+
     }
 
     #lespluspopulaire1 a {
@@ -754,24 +727,27 @@ footer {
 
     .activite1 {
         width:auto;
+        height: 430px;
         border-radius: 20px;
         background-color: white;
-        padding:0px;
         box-shadow: 0 0 20px #b1b1b1;
-        margin: 30px;
+        padding: 0px;
+        margin:  50px 0px;
+        
     }
-
+    
     .activite2 {
         width: auto;
         display: flex;
         justify-content: space-between;
-        padding:0px;
+    
     }
     
     #propos
     {
         width: auto;
         display: flex;
+        flex-wrap: wrap;
        justify-content: space-around;
       
      }

@@ -20,12 +20,12 @@
     </div>
     <div id="menu">
       <ul>
-       <li><a href="#conteneur-hebergements" id="menu1">Hebergements</a></li>
-        <li><a href="#conteneur-activites" id="menu2">Activites</a></li>
+       <div class="menu01"><li><a href="#conteneur-hebergements" class="menu1">Hebergements</a></li></div>
+        <div class="menu02"><li><a href="#conteneur-activites" class="menu2">Activites</a></li></div>
+      </ul> 
       <a href="#incrire" id="menu3"><strong>S'incrire</strong></a>
-    </ul>
     <div>
-      </div>
+  </div>
   </header>
   <section id="introduction"
   >
@@ -36,8 +36,7 @@
 
   <div id="bouton-recherche">
     <div id="map"><i class="fas fa-map-marker-alt"></i><input type="search" name="Marseille" id="Marseille"
-        placeholder="Marseille, France" size="20" maxlength="10" /><a href="#recherche" id="recherche">Rechercher</a>
-      <span id="recherche-mini"><i class="fas fa-search"></i></span></button>
+        placeholder="Marseille, France" size="20" maxlength="10" /><a href="#recherche" id="recherche">Rechercher</a><span id="recherche-mini"><i class="fas fa-search"></i></span></button>
     </div>
   </div>
 
@@ -79,14 +78,14 @@
     <div id="info-icon"><i class="fas fa-info"></i></span></div>
     <p>Plus de 500 logements sont disponibles dans cette ville</p>
   </div>
-<section id="section-hebergements">
-<article id="conteneur-hebergements">
-  <h2>Hebergements a Marseille</h2>
+  <section id="section-hebergements">
+    <article id="conteneur-hebergements">
+      <h2>Hebergements a Marseille</h2>
 
-  <div id="content-hebergements1">
+      <div id="content-hebergements1">
     <a href="#" class="hotel">
       <div class="cannebiere">
-        <img src="images/cannebiere.jpg" id="cannebiere2" alt="auberge la cannebiere" />
+        <div class="crop-hotel"><img src="images/cannebiere.jpg" id="cannebiere2" alt="auberge la cannebiere"/></div>
         <div class="titre">Auberge la Cannebiere</div>
         <div class="description">Nuit a partir de <samp class="prix"> 25€</samp> </div>
         <div class="etoiles"><span class="blue">
@@ -97,7 +96,7 @@
     </a>
     <a href="#" class="hotel">
       <div class="hotelduport">
-        <img src="images/hotel_le port.jpg" id="hotelduport2" alt="hotel du Port" />
+        <div class="crop-hotel"><img src="images/hotel_le port.jpg" id="hotelduport2" alt="hotel du Port" /></div>
         <div class="titre">Hotel du port</div>
         <div class="description">Nuit a partir de 52€</div>
         <div class="etoiles"><span class="blue"><i class="fas fa-star"></i>
@@ -107,7 +106,7 @@
     </a>
     <a href="#" class="hotel">
       <div class="lesmouettes">
-        <img src="images/mouettes.jpg" id="lesmouettes2" alt="hotel les mouettes" />
+        <div class="crop-hotel"><img src="images/mouettes.jpg" id="lesmouettes2" alt="hotel les mouettes"/></div>
         <div class="titre">Hotel Les mouettes</div>
         <div class="description">Nuit a partir de 76€</div>
         <div class="etoiles"><span class="blue">
@@ -117,7 +116,7 @@
     </a>
     <a href="#" class="hotel">
       <div class="hotellamer">
-        <img src="images/la_mer.jpg" id="hotellamer2" alt="hotel de la mer" />
+        <div class="crop-hotel"><img src="images/la_mer.jpg" id="hotellamer2" alt="hotel de la mer"/></div>
         <div class="titre">Hotel de la mer</div>
         <div class="description">Nuit a partir de 46€</div>
         <div class="etoiles"><span class="blue">
@@ -128,9 +127,7 @@
     </a>
     <a href="#" class="hotel">
       <div class="lepanier">
-        <div class="crop-hebergement">
-          <img src="images/panier.jpg" id="lepanier2" alt="auberge le panier" />
-        </div>
+          <div class="crop-hotel"><img src="images/panier.jpg" id="lepanier2" alt="auberge le panier" /></div>
         <div class="titre">Auberge le Panier</div>
         <div class="description">Nuit a partir de <samp class="prix">23€ </samp></div>
         <div class="etoiles"><span class="blue">
@@ -140,7 +137,7 @@
     </a>
     <a href="#" class="hotel">
       <div class="chezamina">
-        <img src="images/chez_amina.jpg" id="chezamina2" alt="hotel chez Amina" />
+        <di class="crop-hotel"><img src="images/chez_amina.jpg" id="chezamina2" alt="hotel chez Amina" /></di>
         <div class="titre">Hotel chez Amina</div>
         <div class="description">Nuit a partir de 96€</div>
         <div class="etoiles"><span class="blue">
@@ -164,7 +161,7 @@
   <div id="lespluspopulaire1">
     <a href="#">
       <div class="hotelsoleil">
-        <div class="chambre"><img src="images/hotel_le_soleil.jpg" id="hotelsoleil2" alt=" hotel le soleil" /></div>
+        <div class="crop-chambre"><img src="images/hotel_le_soleil.jpg" id="hotelsoleil2" alt=" hotel le soleil" /></div>
         <div class="titre">Hotel Le soleil du matin</div>
         <div class="description">Nuit a partir de 128€</div>
         <div class="etoiles"><span class="blue"><i class="fas fa-star"></i>
@@ -174,7 +171,7 @@
     </a>
     <a href="#">
       <div class="chambredhote">
-        <div class="chambre"><img src="images/chambre_d'hote_.jpg" id="chambredhote2"
+        <div class="crop-chambre"><img src="images/chambre_d'hote_.jpg" id="chambredhote2"
             alt="au coeur de l'eau chambres d'hotes" /></div>
         <div class="titre">Au coeur de l'eau Chambres d'hotes</div>
         <div class="description">Nuit a partir de 71€</div>
@@ -185,7 +182,7 @@
     </a>
     <a href="#">
       <div class="hotelblue">
-        <div class="chambre"><img src="images/tout_blue.jpg" id="hotelblue2" alt="hotel tout bleu et blanc" /></div>
+        <div class="crop-chambre"><img src="images/tout_blue.jpg" id="hotelblue2" alt="hotel tout bleu et blanc" /></div>
         <div class="titre">Hotel Tout blue et Blanc</div>
         <div class="description">Nuit a partir de 68€</div>
         <div class="etoiles"><span class="blue"><i class="fas fa-star">

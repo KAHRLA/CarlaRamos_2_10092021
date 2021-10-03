@@ -30,7 +30,7 @@ li
 {   list-style-type: none;
     padding-right: 50px;
 }
-}
+
 #menu
 {
     display: flex;
@@ -82,9 +82,11 @@ section#introduction {
 #bouton-recherche input {
     text-align: center;
     font-weight: bold;
+    color: black;
     font-size: 14px;
     border: solid 2px #F2F2F2;
     padding: 15px 5px;
+    
 }
 
 #recherche
@@ -98,7 +100,7 @@ section#introduction {
     padding: 15px 25px;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
-    border:solid 2px #0065FC; ;
+    border:solid 2px #0065FC; 
     font-size: 14px;
     font-weight: bold;
 }
@@ -107,7 +109,7 @@ section#introduction {
 {
     background-color: white;
     color: #0065FC;
-    border: solid 2px;
+    border:solid 2px #0065FC;
 }
 
 #recherche-mini
@@ -118,6 +120,7 @@ section#introduction {
     padding-right: 25px;
     margin : 0;
     font-weight: bold;
+    color: black;
 }
 
 #filtres{
@@ -125,6 +128,7 @@ section#introduction {
     display: flex;
     align-items: center;
     margin-left: 35px;
+    color: black;
 }
 
 #categories-filtres {
@@ -143,10 +147,18 @@ section#introduction {
     position: relative;
     z-index: 1;
 }
-
+#filtres .filtre :hover
+{
+    color:#DEEBFF;
+}
 .filtre:hover {
     background-color: #0065FC;
-    color: #ffffff;
+}
+
+#filtres .filtre .cercle:hover
+{
+   background-color: white; 
+   border:solid 2px #0065FC;
 }
 
 #filtres .filtre .cercle {
@@ -161,14 +173,11 @@ section#introduction {
 }
 
 #filtres .filtre .cercle i {
-
     font-size: 1.5em;
     margin-top: 23%;
     color: #0065FC;
-
 }
 #filtres .filtre a {
-
     padding: 0 25px 0 25px;
     text-decoration: none;
     font-weight: bold;
@@ -195,20 +204,27 @@ a {
     margin-left: 25px;
 }
 /*________________________________Aside________________________________________*/
-
+h2,
+h3
+{
+    font-size: 18px;
+}
 .titre {
     font-weight: bold;
-    margin: 5%;
-    padding: 0;
+    margin: 5px;
+    padding: 0px;
 }
 
 .description {
-    margin: 5%;
+ margin: 5px;
 }
 
-
+#lespluspopulaire .etoiles
+{
+    margin: 7%;
+}
 .etoiles {
-    padding: 5px;
+margin:5px;
 }
 
 .blue {
@@ -222,8 +238,7 @@ a {
 .prix {
     font-size: 17px;
     font-weight: bold;
-    width: 50%;
-    height: 450px;
+    font-family: 'Raleway', sans-serif;
 }
 
 section,
@@ -236,7 +251,6 @@ aside {
     justify-content: space-between;
     align-items: center;
     margin: 25px 7.5% 0 7.5%;
-    
 }
 
 #lespluspopulaire {
@@ -250,7 +264,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 #lespluspopulaire1 a {
@@ -262,7 +275,6 @@ aside {
     border-radius: 10px 0px 0px 10px;
     float: left;
     padding-right: 10px;
-
 }
 
 .hotelsoleil {
@@ -271,7 +283,7 @@ aside {
     box-shadow: 0 0 20px #b1b1b1;
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 1px;
+    padding-bottom: 5px;
     overflow: hidden;
 }
 
@@ -279,7 +291,7 @@ aside {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    padding-left: 4px;
+    padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden;
@@ -292,7 +304,7 @@ aside {
     box-shadow: 0 0 20px #b1b1b1;
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 1px;
+    padding-bottom: 5px;   
 }
 
 
@@ -541,7 +553,8 @@ footer {
     justify-content: space-around;
     padding: 0 50px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px)
+ {
     #filtres {
         margin: 15px 0 35px 0;
         display: flex;
@@ -609,7 +622,7 @@ footer {
     }
 
     .activite1 {
-        width: 48%;
+        width: 38%;
         height: 445px;
         border-radius: 20px;
         background-color: white;
@@ -618,7 +631,7 @@ footer {
     }
 
     .activite2 {
-        width: 48%;
+        width: 40%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -626,10 +639,9 @@ footer {
         justify-content: space-between;
     }
 }
-/*
-@media all and (max-width: 576px) {
+@media all and (max-width: 576px) 
+{
 
-    }
     #menu
     {
      width:auto;
@@ -768,4 +780,4 @@ footer {
     padding:0px 30px; 
     margin: 0px;
     }
-*/
+}

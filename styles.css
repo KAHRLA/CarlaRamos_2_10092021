@@ -268,6 +268,7 @@ aside {
 }
 .hotelsoleil {
     border-radius: 15px;
+    display: flex;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
     padding-left: 5px;
@@ -276,20 +277,22 @@ aside {
     overflow: hidden;
 }
 
-.crop-chambre{
+.crop-chambre, .crop-chambre2{
     border-radius: 10px 0px 0px 10px;
     height: 140px;
     overflow: hidden;
 }
-.crop-chambre img {
-    border-radius: 10px 0px 0px 10px;
-    float: left;
-    padding-right: 10px;
-}
-.crop-chambre img {
+.crop-chambre img,.crop-chambre2 img  {
     height: 100%;
     width: 100%;
     padding-right: 10px;
+
+}
+.crop-chambre2{
+    width: 40%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
 }
 
 /*______________________________Article___________________________________________________________*/
@@ -323,20 +326,24 @@ aside {
     padding-bottom: 10px;
     overflow: hidden; 
 }
+.crop-hotel{
+    height: 115px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.crop-hotel img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #conteneur-hebergements h2 {
     margin: 45px 5% 0 5%;
 }
-.crop-chambre{
-    border-radius: 10px 0px 0px 10px;
-    height: 140px;
-    overflow: hidden;
-}
 
-.crop-chambre img {
-    height: 100%;
-    width: 100%;
-    padding-right: 10px;
-}
 .plusdinfo {
     font-weight: bold;
     display: block;
@@ -346,7 +353,7 @@ aside {
 /*____________________________________Section_________________________________________________________*/
 
 #section-activites{
-    margin: 30px;
+    margin: 20px;
 }
 #section-activites h2
 {
@@ -360,11 +367,11 @@ aside {
     width: 100%;
 }
 
-.activite1 .titre, .activite2 .titre{
-    padding : 5px 10px;
+.activite1 .titre, .activite2 .titre, .activite4 .titre{ 
+    padding: 10px 5px ;
 }
 .activite1 {
-    width: 22%;
+    width: 25%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
@@ -376,20 +383,20 @@ aside {
     width: 100%;
 }
 .activite1 img{
-    position: relative;
+ position: relative;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
 .crop-loisirs1{
     width: 100%;
-    height: 390px;
+    height: 380px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
 }
 
-.activite2 {
-    width: 22%;
+.activite2 , .activite4 {
+    width: 25%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -405,25 +412,22 @@ transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
 }
-.activite2 a{
+.activite2 a, .activite4 a{
     width: 100%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    background-color: white;
-    box-shadow: 0 0 20px #b1b1b1;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
 .crop-loisirs2 {
-    height: 190px;
-}
-.crop-loisirs2 {
-    height: 180px;
+    height: 205px;
     overflow: hidden;
     margin: 0;
     padding: 0;
     border-radius: 10px 10px 0px 0px;
 }
+
 .crop-loisirs3 {
     height: 110px;
     margin: 0;
@@ -431,9 +435,28 @@ transform: translate(-50%, -50%);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 }
-.crop-loisirs3{
-    height: 140px;
+
+.activite4
+{
+    width: 22%;
 }
+ .activite4 img
+ {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.crop-loisirs4 {
+    height: 158px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
 /*________________________________________________________PIED DE SITE______________________________________________*/
 footer {
     display: flex;
@@ -453,45 +476,89 @@ footer{
     padding: 0 50px;
 }
 @media all and (max-width: 1024px)
-{
-    .activite1, .activite2 {
-        width: 48%;
+ {
+    #filtres {
+        margin: 15px 0 35px 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+        align-items: start;
     }
 
+    #categories-filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-    .activite1{
+    .filtre {
+        margin-top: 15px;
+    }
+
+    #section-hebergements {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #lespluspopulaire,
+    #conteneur-hebergements {
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-top: 20px;
+        border-radius: 0px;
+    }
+
+    #content-hebergements1 a .titre {
+        font-size: 13px;
+    }
+
+    #lespluspopulaire1 {
+        width: 90%;
+        margin: 0 5% 45px 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #lespluspopulaire1 a {
         width: 45%;
+        display: flex;
         border-radius: 20px;
         background-color: white;
-        margin-top: 30px;
+        margin: 30px 0 0 0;
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
 
-    .activite2{
-        width: 45%;
+    #conteneur-activites1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .activite1 {
+        width: 38%;
+        height: 445px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 0;
+        box-shadow: 0 0 20px #b1b1b1;
+    }
+
+    .activite2 {
+        width: 40%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 30px;
     }
-
-    .activite2 a{
-        width: 100%;
-        border-radius: 20px;
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        box-shadow: 0 0 20px #b1b1b1;
-    }
-
-    .activite2 a:last-child{
-        margin-top : 100px;
-    }
-
- }
+}
 @media all and (max-width: 576px) 
 {
     header
@@ -633,140 +700,3 @@ footer{
     margin: 0px;
     }
 }
-
-.populaire-item {
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0 0 20px #b1b1b1;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    overflow: hidden; 
-}
-
-.crop-hotel{
-    height: 115px;
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
-}
-
-.crop-hotel img{
-    width: 100%;
-    height: auto;
-}
-
-.crop-chambre{
-    border-radius: 10px 0px 0px 10px;
-    height: 140px;
-    overflow: hidden;
-}
-
-.crop-chambre img {
-    height: 100%;
-    width: 100%;
-    padding-right: 10px;
-}
-
-.hotelsoleil {
-    border-radius: 15px;
-    display: flex;
-    background-color: white;
-    box-shadow: 0 0 20px #b1b1b1;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
-}
-
-.crop-loisirs1 img {
-    height: 100%;
-    width: 100%;
-}
-
-.activite2 a{
-    width: 100%;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 0 20px #b1b1b1;
-
-    background-color: white;
-    box-shadow: 0 0 20px #b1b1b1;
-    margin-bottom: 20px;
-}
-
-.activite1 img{
-    position: relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
- .activite2 img{
-    position: relative;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.activite1 .titre, .activite2 .titre{
-    padding : 5px 10px;
-}
-
-.crop-loisirs1{
-    width: 100%;
-    height: 390px;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
-}
-
-.crop-loisirs3{
-    height: 140px;
-}
-
-.crop-loisirs2 {
-    height: 190px;
-}
-
-footer{
-    padding-bottom : 20px;
-}
-
-
-@media all and (max-width: 1024px)
- {
-    .activite1, .activite2 {
-        width: 48%;
-    }
-    .activite1{
-        width: 45%;
-        border-radius: 20px;
-        background-color: white;
-        margin-top: 30px;
-        padding: 0;
-        box-shadow: 0 0 20px #b1b1b1;
-    }
-
-    .activite2{
-        width: 45%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 30px;
-    }
-
-    .activite2 a{
-        width: 100%;
-        border-radius: 20px;
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        box-shadow: 0 0 20px #b1b1b1;
-    }
-
-    .activite2 a:last-child{
-        margin-top : 100px;
-    }
-
- }

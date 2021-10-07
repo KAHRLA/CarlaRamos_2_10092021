@@ -212,20 +212,22 @@ h3
 }
 .titre {
     font-weight: bold;
-    margin: 5px;
-    padding: 0px;
+    margin:5px;
+    padding: 0 0 0 5px;
 }
 
 .description {
- margin: 5px;
+ margin:5px;
+ padding:0 0 0 5px;
 }
 
-#lespluspopulaire .etoiles
+.etoiles1
 {
-    margin: 7%;
+padding: 30px 0 0 0;
+margin: 0 0 0 5px;
 }
 .etoiles {
-margin:5px;
+margin:8px;
 }
 
 .blue {
@@ -252,10 +254,11 @@ aside {
     align-items: center;
     margin: 30px 7.5% 0 7.5%;
 }
+
 #lespluspopulaire {
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 50%;
+    width: 40%;
     margin: 20px;
 }
 #lespluspopulaire1 {
@@ -278,23 +281,28 @@ aside {
 }
 
 .crop-chambre, .crop-chambre2{
-    border-radius: 10px 0px 0px 10px;
+    border-radius:15px 0 0 15px; 
     height: 140px;
     overflow: hidden;
 }
 .crop-chambre img,.crop-chambre2 img  {
     height: 100%;
     width: 100%;
-    padding-right: 10px;
+    padding-right: px;
 
 }
 .crop-chambre2{
     width: 40%;
-    height: 140px;
+    height: 130px;
     overflow: hidden;
     border-radius: 15px 0 0 15px;
 }
-
+.crop-chambre .crop-chambre2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*______________________________Article___________________________________________________________*/
 #section-hebergements {
     display: flex;
@@ -364,19 +372,18 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
 }
 
 .activite1 .titre, .activite2 .titre, .activite4 .titre{ 
     padding: 10px 5px ;
 }
 .activite1 {
-    width: 25%;
+    width: 22%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    margin: 0;
-    padding: 0;
+    
 }
 .crop-loisirs1 img {
     height: 100%;
@@ -397,8 +404,6 @@ transform: translate(-50%, -50%);
 
 .activite2 , .activite4 {
     width: 25%;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: nowrap;
     align-content: space-between;
@@ -421,17 +426,13 @@ transform: translate(-50%, -50%);
 }
 
 .crop-loisirs2 {
-    height: 205px;
+    height: 190px;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
     border-radius: 10px 10px 0px 0px;
 }
 
 .crop-loisirs3 {
-    height: 110px;
-    margin: 0;
-    padding: 0;
+    height: 126px;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 }
@@ -439,6 +440,7 @@ transform: translate(-50%, -50%);
 .activite4
 {
     width: 22%;
+    
 }
  .activite4 img
  {
@@ -452,8 +454,6 @@ transform: translate(-50%, -50%);
 .crop-loisirs4 {
     height: 158px;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -475,9 +475,12 @@ footer{
     justify-content: space-around;
     padding: 0 50px;
 }
+/*________________________________________________________Taille tablette______________________________________________*/
 @media all and (max-width: 1024px)
- {
-    #filtres {
+{
+
+     #filtres 
+    {
         margin: 15px 0 35px 0;
         display: flex;
         flex-direction: column;
@@ -505,7 +508,7 @@ footer{
 
     #lespluspopulaire,
     #conteneur-hebergements {
-        width: 100%;
+        width:100%;
         background-color: #F2F2F2;
         margin-top: 20px;
         border-radius: 0px;
@@ -514,9 +517,14 @@ footer{
     #content-hebergements1 a .titre {
         font-size: 13px;
     }
+    .etoiles1
+    {
+    padding: 10px 0 0 0;
 
+    }
     #lespluspopulaire1 {
-        width: 90%;
+        width:90%;
+        height: auto;
         margin: 0 5% 45px 5%;
         display: flex;
         flex-wrap: wrap;
@@ -525,7 +533,7 @@ footer{
     }
 
     #lespluspopulaire1 a {
-        width: 45%;
+        width:45%;
         display: flex;
         border-radius: 20px;
         background-color: white;
@@ -542,38 +550,37 @@ footer{
     }
 
     .activite1 {
-        width: 38%;
-        height: 445px;
+        width: 46%;
+        height:190px; 
         border-radius: 20px;
         background-color: white;
-        padding: 0;
+        padding: O;
         box-shadow: 0 0 20px #b1b1b1;
     }
 
-    .activite2 {
-        width: 40%;
+    .activite2, .activite4 {
+        width: 46%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
         flex-direction: column;
         justify-content: space-between;
     }
-}
+}   
+
+/*________________________________________________________Taille mobile______________________________________________*/
 @media all and (max-width: 576px) 
 {
     header
     {
-       margin: 0px; 
-       padding: 0px;
-       margin: 10px 0 20px 0;
+    margin: 10px 0 20px 0;
     }
     #menu
     {
-     width:auto;
+    width:auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    
     }
     .menu1
     {
@@ -624,7 +631,7 @@ footer{
     
     .section-hebergements
     {
-        width: auto;
+        width:100%;
     }
     #conteneur-hebergements
     {
@@ -638,16 +645,20 @@ footer{
         display: flex;
         flex-direction:column;
         justify-content: space-between;
-        width:100%;
-        
+        width:100%;        
     }
-    
+    #content-hebergements1 a {
+        width: 90%;
+        margin-bottom: 25px;
+        padding: 5px;
+    }
+ 
     #content-hebergements1 a .titre {
         font-size: 10px;
     }
 
     #lespluspopulaire1 {
-        width:auto;
+        width:80%;
         margin: 0 5% 45px 5%;
         display: flex;
         flex-wrap: wrap;
@@ -657,7 +668,7 @@ footer{
     }
 
     #lespluspopulaire1 a {
-        width:auto;
+        width:100%;
         display: flex;
         border-radius: 20px;
         background-color: white;
@@ -666,11 +677,8 @@ footer{
         box-shadow: 0 0 20px #b1b1b1;
     }
 
-    
-
     .activite1 {
-        width:auto;
-        height: 430px;
+        width:100%;
         border-radius: 20px;
         background-color: white;
         box-shadow: 0 0 20px #b1b1b1;
@@ -678,22 +686,65 @@ footer{
         margin:  50px 0px;
         
     }
-    
-    .activite2 {
-        width: auto;
+    .crop-loisirs1 img {
+        height: 50%;
+        width: 100%;
+    }
+    .activite1 img{
+     position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .activite2,  .activite4{
+        width: 100%;
         display: flex;
         justify-content: space-between;
-    
+
     }
-    
-    #propos
-    {
-        width: auto;
+        .activite1, .activite2 {
+        width:100%;
+    }
+
+    .activite1{
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 20px #b1b1b1;
+    }
+
+    .activite2{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-       justify-content: space-around;
-      
-     }
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .activite2 a{
+        width: 100%;
+        border-radius: 20px;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 20px #b1b1b1;
+    }
+
+    .activite2 a:last-child{
+        margin-top : 100px;
+    }
+    #propos
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: space-around;
+    
+    }
     .propos
     {
     padding:0px 30px; 

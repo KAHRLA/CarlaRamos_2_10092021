@@ -269,9 +269,8 @@ aside {
 #lespluspopulaire1 a {
     padding:10px;
 }
-.hotelsoleil {
+.hotelsoleil {display: flex;
     border-radius: 15px;
-    display: flex;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
     padding-left: 5px;
@@ -288,8 +287,6 @@ aside {
 .crop-chambre img,.crop-chambre2 img  {
     height: 100%;
     width: 100%;
-    padding-right: px;
-
 }
 .crop-chambre2{
     width: 40%;
@@ -372,7 +369,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: auto;
+    width: 100%;
 }
 
 .activite1 .titre, .activite2 .titre, .activite4 .titre{ 
@@ -520,11 +517,9 @@ footer{
     .etoiles1
     {
     padding: 10px 0 0 0;
-
     }
     #lespluspopulaire1 {
-        width:90%;
-        height: auto;
+        width: 90%;
         margin: 0 5% 45px 5%;
         display: flex;
         flex-wrap: wrap;
@@ -533,7 +528,7 @@ footer{
     }
 
     #lespluspopulaire1 a {
-        width:45%;
+        width: 45%;
         display: flex;
         border-radius: 20px;
         background-color: white;
@@ -541,20 +536,18 @@ footer{
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
-
+    
     #conteneur-activites1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 
     .activite1 {
-        width: 46%;
-        height:190px; 
+        width: 46%; 
         border-radius: 20px;
         background-color: white;
-        padding: O;
+        padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
 
@@ -573,14 +566,19 @@ footer{
 {
     header
     {
-    margin: 10px 0 20px 0;
+        margin: 10px 0 20px 0;
     }
+    
     #menu
     {
-    width:auto;
     display: flex;
-    flex-direction: column-reverse;
+    justify-content:space-between;
+    align-items: flex-start;
+    width:100%;
+    flex-direction:column-reverse;
     align-items: flex-end;
+    margin: 10px 0 20px 0; 
+    
     }
     .menu1
     {
@@ -596,10 +594,21 @@ footer{
     {
     border-bottom: 2px solid #b1b1b1;
     }
-    #menu
+    
+    ul
     {
-        margin: 10px 0 20px 0; 
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-left: 0; 
     }
+    
+li
+{
+    width:120px;
+    text-align: center;
+    font-size: 16px;
+}
     #logo
     {
     width:auto;
@@ -637,7 +646,7 @@ footer{
     {
         background:none;
         width:100%;
-        margin-top: 20px;
+        margin-top: 10px;
         border-radius: 0px;
     }
     #content-hebergements1
@@ -656,11 +665,10 @@ footer{
     #content-hebergements1 a .titre {
         font-size: 10px;
     }
-
-    #lespluspopulaire1 {
-        width:80%;
+    #lespluspolaire1 {
+        width:100%;
         margin: 0 5% 45px 5%;
-        display: flex;
+      display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction:row;
@@ -676,23 +684,28 @@ footer{
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
-
+    
     .activite1 {
         width:100%;
         border-radius: 20px;
         background-color: white;
         box-shadow: 0 0 20px #b1b1b1;
         padding: 0px;
-        margin:  50px 0px;
+        margin:  20px 0px;
         
     }
-    .crop-loisirs1 img {
-        height: 50%;
+    .crop-loisirs1, .crop-loisirs2,
+    .crop-loisirs3, .crop-loisirs4
+    {
         width: 100%;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
     }
     .activite1 img{
+    width:100%;  
      position: relative;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     }
@@ -702,15 +715,12 @@ footer{
         justify-content: space-between;
 
     }
-        .activite1, .activite2 {
-        width:100%;
-    }
-
+        
     .activite1{
         width: 100%;
         border-radius: 20px;
         background-color: white;
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
@@ -722,7 +732,6 @@ footer{
         align-content: space-between;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 30px;
     }
 
     .activite2 a{
@@ -733,10 +742,10 @@ footer{
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
-
     .activite2 a:last-child{
-        margin-top : 100px;
+        margin-top : 20px;
     }
+    
     #propos
     {
         width: 100%;

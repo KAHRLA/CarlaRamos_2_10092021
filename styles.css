@@ -223,7 +223,7 @@ h3
 
 .etoiles1
 {
-padding: 30px 0 0 0;
+padding: 20px 0 0 0;
 margin: 0 0 0 5px;
 }
 .etoiles {
@@ -279,26 +279,16 @@ aside {
     overflow: hidden;
 }
 
-.crop-chambre, .crop-chambre2{
-    border-radius:15px 0 0 15px; 
+.crop-chambre{
+    border-radius: 10px 0px 0px 10px;
     height: 140px;
     overflow: hidden;
 }
-.crop-chambre img,.crop-chambre2 img  {
+
+.crop-chambre img {
     height: 100%;
     width: 100%;
-}
-.crop-chambre2{
-    width: 40%;
-    height: 130px;
-    overflow: hidden;
-    border-radius: 15px 0 0 15px;
-}
-.crop-chambre .crop-chambre2{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-right: 10px;
 }
 /*______________________________Article___________________________________________________________*/
 #section-hebergements {
@@ -510,14 +500,19 @@ footer{
         margin-top: 20px;
         border-radius: 0px;
     }
-
     #content-hebergements1 a .titre {
         font-size: 13px;
     }
+
+    #lespluspopulaire1 a {
+        padding:10px;
+    }
+
     .etoiles1
     {
     padding: 10px 0 0 0;
     }
+    
     #lespluspopulaire1 {
         width: 90%;
         margin: 0 5% 45px 5%;
@@ -528,15 +523,15 @@ footer{
     }
 
     #lespluspopulaire1 a {
-        width: 45%;
+        width:40%;
         display: flex;
         border-radius: 20px;
-        background-color: white;
         margin: 30px 0 0 0;
         padding: 0;
+        background-color: white;
         box-shadow: 0 0 20px #b1b1b1;
+
     }
-    
     #conteneur-activites1 {
         display: flex;
         flex-wrap: wrap;
@@ -566,7 +561,8 @@ footer{
 {
     header
     {
-        margin: 10px 0 20px 0;
+        width: 50%;
+        height: 100%;
     }
     
     #menu
@@ -577,8 +573,20 @@ footer{
     width:100%;
     flex-direction:column-reverse;
     align-items: flex-end;
-    margin: 10px 0 20px 0; 
+    margin:0; 
+    font-size: 16px;
+    }
+    ul
+    {
+        display: flex;
+        justify-content: space-between;
+        
+    }
     
+    li
+    {
+        text-align: center;
+        font-size: 16px;
     }
     .menu1
     {
@@ -589,30 +597,18 @@ footer{
         border-top: none;
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
+
     }
     .menu02
     {
     border-bottom: 2px solid #b1b1b1;
     }
     
-    ul
-    {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        padding-left: 0; 
-    }
-    
-li
-{
-    width:120px;
-    text-align: center;
-    font-size: 16px;
-}
     #logo
     {
     width:auto;
-    padding: 10px 0 0 5%;
+    padding: 0px 0 0 10%;
+
     }
     #recherche
     {
@@ -637,7 +633,22 @@ li
         color: #0065FC;
         border-radius: 10px;
     }
-    
+    #lespluspopulaire1 {
+        width:60%;
+        margin: 0 5% 45px 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction:row;
+    }
+    #lespluspopulaire1 a {
+        width:100%;
+        display: flex;
+        margin: 30px 0 0 0;
+        padding: 0;
+        
+    }
+
     .section-hebergements
     {
         width:100%;
@@ -652,9 +663,10 @@ li
     #content-hebergements1
     {
         display: flex;
-        flex-direction:column;
+        flex-wrap: wrap;
         justify-content: space-between;
-        width:100%;        
+        width:100%; 
+           
     }
     #content-hebergements1 a {
         width: 90%;
@@ -663,28 +675,13 @@ li
     }
  
     #content-hebergements1 a .titre {
-        font-size: 10px;
-    }
-    #lespluspolaire1 {
-        width:100%;
-        margin: 0 5% 45px 5%;
-      display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-direction:row;
-
-    }
-
-    #lespluspopulaire1 a {
-        width:100%;
-        display: flex;
-        border-radius: 20px;
-        background-color: white;
-        margin: 30px 0 0 0;
-        padding: 0;
-        box-shadow: 0 0 20px #b1b1b1;
+        font-size: 16px;
     }
     
+    .etoiles1
+    {
+    padding: 10px 0 0 0;
+    }
     .activite1 {
         width:100%;
         border-radius: 20px;
@@ -692,7 +689,6 @@ li
         box-shadow: 0 0 20px #b1b1b1;
         padding: 0px;
         margin:  20px 0px;
-        
     }
     .crop-loisirs1, .crop-loisirs2,
     .crop-loisirs3, .crop-loisirs4
@@ -713,7 +709,6 @@ li
         width: 100%;
         display: flex;
         justify-content: space-between;
-
     }
         
     .activite1{

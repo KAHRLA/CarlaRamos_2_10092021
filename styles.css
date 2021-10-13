@@ -16,11 +16,13 @@ header
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    list-style-type: none;
     }
 #logo{
     width:auto;
     margin: 0px;
+}
+nav{
+    width: 100%;
 }
 /*Liens ancre*/
 ul{
@@ -141,7 +143,7 @@ section#introduction {
     align-items: center;
     height: 50px;
     border-radius: 30px;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     background-color: white;
     margin: 0px 25px 0 0;
     padding: 2px 0 0 0;
@@ -223,8 +225,8 @@ h3
 
 .etoiles1
 {
-padding: 20px 0 0 0;
-margin: 0 0 0 5px;
+padding: 30px 0 0 0;
+
 }
 .etoiles {
 margin:8px;
@@ -243,8 +245,6 @@ margin:8px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
-
-section,
 aside {
     position: relative;
 }
@@ -270,25 +270,33 @@ aside {
     padding:10px;
 }
 .hotelsoleil {display: flex;
-    border-radius: 15px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .crop-chambre{
     border-radius: 10px 0px 0px 10px;
     height: 140px;
     overflow: hidden;
+    width: 40%;
+}
+.infos-populaire{
+    width: 60%;
 }
 
 .crop-chambre img {
     height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.crop-chambre.crop-height img{
     width: 100%;
-    padding-right: 10px;
+    height: auto;
+   
 }
 /*______________________________Article___________________________________________________________*/
 #section-hebergements {
@@ -315,10 +323,7 @@ aside {
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding: 5px;
     overflow: hidden; 
 }
 .crop-hotel{
@@ -329,7 +334,7 @@ aside {
 
 .crop-hotel img{
     width: 100%;
-    height: auto;
+    min-width: 220px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -370,7 +375,7 @@ aside {
     border-radius: 20px;
     background-color: white;
     box-shadow: 0 0 20px #b1b1b1;
-    
+    padding: 0;
 }
 .crop-loisirs1 img {
     height: 100%;
@@ -396,6 +401,7 @@ transform: translate(-50%, -50%);
     align-content: space-between;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
 }
  .activite2 img{
     position: relative;
@@ -411,19 +417,16 @@ transform: translate(-50%, -50%);
     box-shadow: 0 0 20px #b1b1b1;
     margin-bottom: 15px;
 }
-
 .crop-loisirs2 {
     height: 190px;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
 }
-
 .crop-loisirs3 {
     height: 126px;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 }
-
 .activite4
 {
     width: 22%;
@@ -443,14 +446,12 @@ transform: translate(-50%, -50%);
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
 }
-
 /*________________________________________________________PIED DE SITE______________________________________________*/
 footer {
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
-
 }
 footer{
     padding-bottom : 20px;
@@ -461,6 +462,10 @@ footer{
     margin-right: 2px;
     justify-content: space-around;
     padding: 0 50px;
+}
+.propos a, .propos h3{
+    display: block;
+    padding: 8px;
 }
 /*________________________________________________________Taille tablette______________________________________________*/
 @media all and (max-width: 1024px)
@@ -492,7 +497,6 @@ footer{
         flex-direction: column-reverse;
         align-items: center;
     }
-
     #lespluspopulaire,
     #conteneur-hebergements {
         width:100%;
@@ -503,51 +507,42 @@ footer{
     #content-hebergements1 a .titre {
         font-size: 13px;
     }
-
     #lespluspopulaire1 a {
         padding:10px;
-    }
-
-    .etoiles1
-    {
-    padding: 10px 0 0 0;
-    }
-    
+    }    
     #lespluspopulaire1 {
-        width: 90%;
+        min-width: 85px;
         margin: 0 5% 45px 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
     }
 
     #lespluspopulaire1 a {
-        width:40%;
+        width: 45%;
         display: flex;
         border-radius: 20px;
+        background-color: white;
         margin: 30px 0 0 0;
         padding: 0;
-        background-color: white;
         box-shadow: 0 0 20px #b1b1b1;
-
     }
     #conteneur-activites1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .activite1 {
-        width: 46%; 
+        width: 49%; 
         border-radius: 20px;
         background-color: white;
         padding: 0;
         box-shadow: 0 0 20px #b1b1b1;
     }
-
     .activite2, .activite4 {
-        width: 46%;
+        width: 49%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -555,38 +550,38 @@ footer{
         justify-content: space-between;
     }
 }   
-
 /*________________________________________________________Taille mobile______________________________________________*/
 @media all and (max-width: 576px) 
 {
     header
     {
-        width: 50%;
-        height: 100%;
+    margin: 0;
+    padding: 0;
     }
-    
+    #tete{
+        display: block;
+        height: 150px;
+    }
     #menu
     {
     display: flex;
-    justify-content:space-between;
-    align-items: flex-start;
     width:100%;
+    height: 150px;
     flex-direction:column-reverse;
     align-items: flex-end;
-    margin:0; 
-    font-size: 16px;
     }
     ul
     {
         display: flex;
-        justify-content: space-between;
-        
+        margin: 0;
+        padding: 0;
     }
-    
     li
     {
+        width: 50%;
         text-align: center;
         font-size: 16px;
+        padding: 40px 0 20px 0; 
     }
     .menu1
     {
@@ -603,11 +598,14 @@ footer{
     {
     border-bottom: 2px solid #b1b1b1;
     }
-    
+    #menu3{
+        padding : 63px 2% 0 0;
+    }
+
     #logo
     {
-    width:auto;
-    padding: 0px 0 0 10%;
+    position: absolute;
+    padding: 10px 20px;
 
     }
     #recherche
@@ -616,15 +614,18 @@ footer{
     }
     #recherche-mini
     {
-    display:initial;
+    display:inline;
     }
-
     #recherche-mini i
     {
+        border-radius: 10px;
         background-color:#0065FC;
         color: white;
-        border-radius: 15px;
-        margin: 0px;
+        width: 20px;
+        height: 16px;
+        margin: -5px 0 0 -5px;
+        z-index: 2;
+        text-align: center;
     }
     #recherche-mini i:hover
     {
@@ -634,8 +635,8 @@ footer{
         border-radius: 10px;
     }
     #lespluspopulaire1 {
-        width:60%;
-        margin: 0 5% 45px 5%;
+        margin: 0;
+        padding: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -646,9 +647,7 @@ footer{
         display: flex;
         margin: 30px 0 0 0;
         padding: 0;
-        
     }
-
     .section-hebergements
     {
         width:100%;
@@ -664,12 +663,10 @@ footer{
     {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        width:100%; 
-           
+        justify-content: space-between;    
     }
     #content-hebergements1 a {
-        width: 90%;
+        width: 100%;
         margin-bottom: 25px;
         padding: 5px;
     }
@@ -677,11 +674,10 @@ footer{
     #content-hebergements1 a .titre {
         font-size: 16px;
     }
-    
-    .etoiles1
-    {
-    padding: 10px 0 0 0;
-    }
+    #section-activites h2
+{
+   padding: 0;
+}
     .activite1 {
         width:100%;
         border-radius: 20px;
@@ -740,14 +736,12 @@ footer{
     .activite2 a:last-child{
         margin-top : 20px;
     }
-    
     #propos
     {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     justify-content: space-around;
-    
     }
     .propos
     {

@@ -191,7 +191,7 @@ h3{
  padding:0 0 0 5px;
 }
 .etoiles1{
-padding: 35px 0 0 0;
+padding: 20px 0 0 0;
 margin: 8px;
 }
 .etoiles {
@@ -457,23 +457,34 @@ footer{
     #content-hebergements1 a .titre {
         font-size: 13px;
     }
-    #lespluspopulaire1 {
-        min-width:85%;
-        margin: 5% 5% 45px 5%;
+    #lespluspopulaire1{  
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
+        flex-direction:row; 
     }
     #lespluspopulaire1 a {
-        width: 45%;
+        width:45%;
         display: flex;
-        border-radius: 20px;
-        background-color: white;
-        margin: 30px 0 0 0px;
-        padding:0;
-        box-shadow: 0 0 20px #b1b1b1;
+        margin: 20px 0 25px 20px ;
+        padding: 0;
+    }
+    .hotelsoleil {
+        width: 100%;
+        display: flex;
+        align-items:center;
+    }
+    .crop-chambre{
+        height: 140px;
+        overflow: hidden;
+        width: 40%;
+    }
+    .infos-populaire{
+        width: 100%;
+    }
+    .crop-chambre.crop-height img{
+        width: 100%;
+        height:100%;
     }
     #conteneur-activites1
 {
@@ -483,7 +494,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 30  30px ;
+        margin:30px 30;
     }
     .activite1 {
         width: 48%; 
@@ -501,12 +512,12 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         }
-
+        .propos
+        {
+        padding:0px 30px; 
+        margin-bottom: 35px;
+        }
     }   
-
-
-
-
 /*________________________________________________________Taille mobile______________________________________________*/
 @media all and (max-width: 576px) 
 {
@@ -578,11 +589,11 @@ footer{
         border-radius: 15px;
         background-color:#0065FC;
         color: white;
-        width: 15px;
         height: 18px;
         margin: -8px 0 0 -8px;
         z-index: 2;
         text-align: center;
+        min-width: 15px;
     }
     #recherche-mini i:hover
     {
@@ -591,22 +602,25 @@ footer{
         color: #0065FC;
         border-radius: 10px;
     }
-    #lespluspopulaire1 {
-        width:88%;
-        margin:20px 5 5 20px;
+    #lespluspopulaire1
+    {   min-width:100%;
         padding: 0;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: space-between;
-        flex-direction:row;
+        flex-direction:row; 
     }
     #lespluspopulaire1 a {
-        width:100%;
-        display: flex;
-        margin: 20px 0 0 10px ;
+        width: 100%;
+        margin: 20px 0 25px 20px ;
         padding: 0;
+        display: flex;
+        align-items: center;
     }
-    
+    .crop-chambre.crop-height img{
+        width: 100%;
+        height:100%;
+    }
     #conteneur-hebergements
     {
         background:none;

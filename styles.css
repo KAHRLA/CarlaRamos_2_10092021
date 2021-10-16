@@ -447,15 +447,20 @@ footer{
         flex-direction: column-reverse;
         align-items: center;
     }
-    #lespluspopulaire,
-    #conteneur-hebergements {
+    #lespluspopulaire {
         width:100%;
         background-color: #F2F2F2;
         margin-top: 20px;
         border-radius: 0px;
     }
+    #conteneur-hebergements {
+        width:100%;
+        background:none;
+        margin-top: 20px;
+        border-radius: 0px;
+    }
     #content-hebergements1 a .titre {
-        font-size: 13px;
+        font-size: 16px;
     }
     #lespluspopulaire1{  
         display: flex;
@@ -603,7 +608,7 @@ footer{
         border-radius: 10px;
     }
     #lespluspopulaire1
-    {   min-width:100%;
+    {   min-width:80%;
         padding: 0;
         display: flex;
         flex-wrap:wrap;
@@ -612,7 +617,7 @@ footer{
     }
     #lespluspopulaire1 a {
         width: 100%;
-        margin: 20px 0 25px 20px ;
+        margin:20px;
         padding: 0;
         display: flex;
         align-items: center;
